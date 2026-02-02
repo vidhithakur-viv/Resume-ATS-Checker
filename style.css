@@ -1,0 +1,241 @@
+
+/* ================================
+   GLOBAL STYLES
+   ================================ */
+
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Page background and text color */
+body {
+    background-color: #f4f6fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    background-color: #4f46e5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ================================
+   MAIN CONTAINER
+   ================================ */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ================================
+   INPUT SECTION
+   ================================ */
+
+.input-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 14px;
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+.analyze-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Secondary button */
+button.secondary {
+    background-color: #22c55e;
+}
+
+/* ================================
+   TABS
+   ================================ */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e5e7eb;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #4f46e5;
+    color: white;
+}
+
+/* ================================
+   TAB CONTENT
+   ================================ */
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* ================================
+   ATS SCORE CIRCLE
+   ================================ */
+
+.score-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(#4f46e5 0%, #e5e7eb 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.circle span {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ================================
+   INFO CARDS
+   ================================ */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.info-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info-card.missing {
+    border-left: 5px solid #ef4444;
+}
+
+/* ================================
+   LISTS
+   ================================ */
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* ================================
+   HISTORY
+   ================================ */
+
+.history {
+    margin-top: 30px;
+}
+
+.history h3 {
+    margin-bottom: 10px;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 600px) {
+    textarea {
+        height: 140px;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+}
