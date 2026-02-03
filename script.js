@@ -156,3 +156,4 @@ function exportPDF() {
 
 // ====== LOAD HISTORY ON PAGE LOAD ======
 document.addEventListener("DOMContentLoaded", showHistory);
+
